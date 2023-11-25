@@ -80,7 +80,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     formacao = models.CharField(max_length=255, blank=True)
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
-    campus = models.CharField(max_length=2, choices=CAMPI_CHOICES, default='Null')
+    campus = models.CharField(max_length=2, choices=CAMPI_CHOICES, default='AL')
     objects = UserManager()
 
     USERNAME_FIELD = "email"
