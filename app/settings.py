@@ -152,7 +152,7 @@ SPECTACULAR_SETTINGS = {
 
 print(f"MODE: {MODE} \nMEDIA_URL: {MEDIA_URL} \nDATABASE: {DATABASES}")
 
-MEDIA_URL = "http://localhost:8000/media/"
+MEDIA_URL = "https://djangobla-main-dev-agbe.2.us-1.fl0.io/media/"
 MEDIA_ENDPOINT = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
 FILE_UPLOAD_PERMISSIONS = 0o640
