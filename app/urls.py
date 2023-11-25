@@ -16,6 +16,9 @@ from core.views.equipe import EquipeViewSet
 from core.views.hackathon import HackathonViewSet
 from core.views.user import UserViewSet
 from core.views.tema import TemaViewSet
+from core.views.avaliacao import AvaliacaoViewSet
+from core.views.avaliador import AvaliadorViewSet
+from core.views.categoria import CategoriaViewSet
 
 
 from uploader.router import router as uploader_router
@@ -27,6 +30,10 @@ router.register("equipe", EquipeViewSet, basename="equipe")
 router.register("hackathon", HackathonViewSet, basename="hackathon")
 router.register("Temas", TemaViewSet, basename="temas")
 router.register("comentario", ComentarioViewSet, basename="comentario")
+router.register("avaliador", AvaliadorViewSet, basename="avaliador")
+router.register("avaliacao", AvaliacaoViewSet, basename="avaliacao")
+router.register("categoria", CategoriaViewSet, basename="categoria")
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
